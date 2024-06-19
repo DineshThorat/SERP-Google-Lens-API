@@ -1,4 +1,9 @@
 in current folder : npm install
 
 cd frontend
-npm install 
+npm install
+
+Project Run Command :
+
+frontend : npm run dev
+backend : npm start
