@@ -1,7 +1,6 @@
-in current folder : npm install
+cd backend : npm install
 
-cd frontend
-npm install
+cd frontend : npm install
 
 Project Run Command :
 

@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./App.css";
+import "./Home.css";
 
 function Home() {
   const [selectedFile, setSelectedFile] = useState(null);
-  const [visualMatches, setVisualMatches] = useState([]);
   const navigate = useNavigate();
 
   const handleFileChange = (e) => {
@@ -26,20 +25,24 @@ function Home() {
     })
       .then((res) => res.json())
       .then((data) => {
-        setVisualMatches(data.visual_matches);
         navigate("/result", { state: { visualMatches: data.visual_matches } });
       })
       .catch((err) => console.log(err));
   };
 
   return (
-    <div id="app">
-      <div className="upload-section">
-        <h2 className="upload-title">Upload Image</h2>
-        <input type="file" id="fileInput" onChange={handleFileChange} />
-        <button className="upload-btn" onClick={handleUpload}>
-          Upload
-        </button>
+    <div className="full-container">
+      <div className="back">
+        <h1>Google-Lens Search</h1>
+      </div>
+      <div className="container">
+        <div className="box1">
+          <h2>Upload Image</h2>
+          <input type="file" onChange={handleFileChange} />
+          <button className="upload-btn" onClick={handleUpload}>
+            Search Image
+          </button>
+        </div>
       </div>
     </div>
   );
