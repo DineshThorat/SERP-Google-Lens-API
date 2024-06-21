@@ -9,6 +9,11 @@ function Result() {
   return (
     <div id="resultPage">
       <div id="titleContainer">
+        <div className="back-home">
+          <Link to="/" className="back-btn">
+            Back
+          </Link>
+        </div>
         <h2>Results</h2>
       </div>
       <div id="resultContainer">
@@ -22,11 +27,11 @@ function Result() {
             </div>
           ))}
         </div>
-        <div className="back-home">
+        {/* <div className="back-home">
           <Link to="/" className="back-btn">
             Back to Home
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

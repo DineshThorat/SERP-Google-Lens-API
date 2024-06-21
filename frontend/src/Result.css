@@ -31,7 +31,7 @@ body {
   margin-bottom: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: space-between; */
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 0; /* Ensure there is no default margin on the <h2> element */
+  margin-left: 38%;
 }
 
 #resultContainer {
@@ -112,16 +112,14 @@ h2 {
   transform: scale(1.05);
 }
 
-.back-home {
-  margin-top: 20px;
-}
 .back-btn {
   margin-top: 20px;
-  width: 120px;
+  /* width: 120px; */
   text-decoration: none;
-  margin-left: 500px;
+  /* margin-left: 500px; */
   padding: 10px 20px;
-  background-color: #ff4757;
+  /* background-color: #ff4757; */
+  background: #1e90ff;
   color: white;
   border: none;
   border-radius: 5px;

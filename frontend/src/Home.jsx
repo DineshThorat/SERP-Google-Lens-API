@@ -37,12 +37,20 @@ function Home() {
       </div>
       <div className="container">
         <div className="box1">
-          <h2>Upload Image</h2>
+          <div className="heading">
+            <h2>Upload Image</h2>
+          </div>
           <input type="file" onChange={handleFileChange} />
           <button className="upload-btn" onClick={handleUpload}>
             Search Image
           </button>
         </div>
+        <button
+          className="back-btn"
+          onClick={() => (window.location.href = "http://127.0.0.1:5000/")}
+        >
+          Back
+        </button>
       </div>
     </div>
   );

@@ -51,9 +51,12 @@ h1 {
   animation: textPop 1s ease-in-out 1;
   color: #ffffff;
 }
+.heading {
+  width: 100%;
+}
 
-h2 {
-  margin-bottom: 10px;
+.heading h2 {
+  margin: 10px 0;
 }
 
 input[type="file"] {
